@@ -81,6 +81,7 @@ Use the macros from this package in **Given**, **Solution**, and **Answer** so v
 | `problems/` | One GFSA problem per `.tex` file |
 | `images/` | Figures |
 | `fonts/` | `10pt` / `11pt` / `12pt` size-option files |
+| `LICENSE` | MIT License text |
 
 ## Compiling
 
@@ -90,4 +91,8 @@ Auxiliary files such as `.aux` and `.log` stay on your machine; `.gitignore` kee
 
 ## License
 
-MIT. See `LICENSE`.
+This project is licensed under the [MIT License](LICENSE).
+
+You may use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the template, provided the copyright notice and permission notice in `LICENSE` are included in all copies or substantial portions of the software.
+
+Copyright (c) 2026 Garry Ditchley.
