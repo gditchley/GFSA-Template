@@ -1,0 +1,57 @@
+\documentclass[12pt]{gfsa}
+\usepackage{fouriernc}
+\usepackage[capitalize,noabbrev]{cleveref}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{bending}
+\usetikzlibrary{calc}
+
+\tikzset{
+  vector/.style={
+    -{Stealth[length=10pt,width=5pt,inset=0pt]},
+    line width=2pt,
+    line cap=round,
+    line join=round,
+  },
+  torque/.style={
+    -{Stealth[length=10pt,width=5pt,inset=0pt]
+    Stealth[length=10pt,width=5pt,inset=0pt]},
+    line width=2pt,
+    line cap=round,
+    line join=round,
+  },
+  object/.style={
+    line width=2pt,
+    line cap=round
+  },
+  direction/.style={
+    -{Stealth[length=8pt,width=4pt,inset=0pt,flex]},
+    line width=1pt,
+    line cap=round,
+    line join=round,
+  },
+  dim/.style={
+    >=Stealth,
+    line width=1pt,
+    line cap=round,
+    line join=round,
+  }
+}
+
+\studentname{Garry Ditchley}
+\course{ME 354-005}
+\coursename{Machine Design}
+\assignment{Assignment}
+\duedate{Due Date}
+
+\begin{document}
+
+\maketitle
+
+\input{problems/problem_01.tex}
+\input{problems/problem_02.tex}
+\input{problems/problem_03.tex}
+\input{problems/problem_04.tex}
+
+\end{document}

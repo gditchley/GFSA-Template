@@ -1,0 +1,187 @@
+\ProvidesFile{size11.clo}[2025/01/22 v1.4n Standard LaTeX file (size option)]
+
+% --------------------------------------------------------------------------
+% Normal Font Size
+% --------------------------------------------------------------------------
+
+\renewcommand\normalsize{%
+  \@setfontsize\normalsize\@xipt{13.6}%
+  \abovedisplayskip 11\p@ \@plus 3\p@ \@minus 6\p@
+  \abovedisplayshortskip \z@ \@plus 3\p@
+  \belowdisplayshortskip 6.5\p@ \@plus 3.5\p@ \@minus 3\p@
+  \belowdisplayskip \abovedisplayskip
+  \let\@listi\@listI
+}
+
+\normalsize
+
+% --------------------------------------------------------------------------
+% Additional Font Sizes
+% --------------------------------------------------------------------------
+
+\DeclareRobustCommand\small{%
+  \@setfontsize\small\@xpt\@xiipt
+  \abovedisplayskip 10\p@ \@plus 2\p@ \@minus 5\p@
+  \abovedisplayshortskip \z@ \@plus 3\p@
+  \belowdisplayshortskip 6\p@ \@plus 3\p@ \@minus 3\p@
+  \def\@listi{%
+    \leftmargin\leftmargini
+    \topsep 6\p@ \@plus 2\p@ \@minus 2\p@
+    \parsep 3\p@ \@plus 2\p@ \@minus \p@
+    \itemsep \parsep
+  }%
+  \belowdisplayskip \abovedisplayskip
+}
+
+\DeclareRobustCommand\footnotesize{%
+  \@setfontsize\footnotesize\@ixpt{11}%
+  \abovedisplayskip 8\p@ \@plus 2\p@ \@minus 4\p@
+  \abovedisplayshortskip \z@ \@plus \p@
+  \belowdisplayshortskip 4\p@ \@plus 2\p@ \@minus 2\p@
+  \def\@listi{%
+    \leftmargin\leftmargini
+    \topsep 4\p@ \@plus 2\p@ \@minus 2\p@
+    \parsep 2\p@ \@plus \p@ \@minus \p@
+    \itemsep \parsep
+  }%
+  \belowdisplayskip \abovedisplayskip
+}
+
+\DeclareRobustCommand\scriptsize{%
+  \@setfontsize\scriptsize\@viiipt{9.5}%
+}
+
+\DeclareRobustCommand\tiny{%
+  \@setfontsize\tiny\@vipt\@viipt
+}
+
+\DeclareRobustCommand\large{%
+  \@setfontsize\large\@xiipt{14}%
+}
+
+\DeclareRobustCommand\Large{%
+  \@setfontsize\Large\@xivpt{18}%
+}
+
+\DeclareRobustCommand\LARGE{%
+  \@setfontsize\LARGE\@xviipt{22}%
+}
+
+\DeclareRobustCommand\huge{%
+  \@setfontsize\huge\@xxpt{25}%
+}
+
+\DeclareRobustCommand\Huge{%
+  \@setfontsize\Huge\@xxvpt{30}%
+}
+
+% --------------------------------------------------------------------------
+% Paragraph Layout
+% --------------------------------------------------------------------------
+
+\setlength\parindent{17\p@}
+
+% --------------------------------------------------------------------------
+% Vertical Spacing
+% --------------------------------------------------------------------------
+
+\setlength\smallskipamount{3.5\p@ \@plus 1\p@ \@minus 1\p@}
+\setlength\medskipamount{7\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\bigskipamount{14\p@ \@plus 4\p@ \@minus 4\p@}
+
+% --------------------------------------------------------------------------
+% Header and Footer
+% --------------------------------------------------------------------------
+
+\setlength\headheight{14\p@}
+\setlength\headsep{12\p@}
+\setlength\footskip{30\p@}
+
+% --------------------------------------------------------------------------
+% Page Building
+% --------------------------------------------------------------------------
+
+\setlength\topskip{11\p@}
+\setlength\maxdepth{.5\topskip}
+
+% --------------------------------------------------------------------------
+% Float Spacing
+% --------------------------------------------------------------------------
+
+\setlength\floatsep{12\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\textfloatsep{20\p@ \@plus 2\p@ \@minus 4\p@}
+\setlength\intextsep{12\p@ \@plus 2\p@ \@minus 2\p@}
+
+% --------------------------------------------------------------------------
+% Float Pages
+% --------------------------------------------------------------------------
+
+\setlength\@fptop{0\p@ \@plus 1fil}
+\setlength\@fpsep{8\p@ \@plus 2fil}
+\setlength\@fpbot{0\p@ \@plus 1fil}
+
+% --------------------------------------------------------------------------
+% Caption Spacing
+% --------------------------------------------------------------------------
+
+\setlength\abovecaptionskip{9\p@}
+\setlength\belowcaptionskip{0\p@}
+
+% --------------------------------------------------------------------------
+% List Spacing
+% --------------------------------------------------------------------------
+
+\setlength\partopsep{3\p@ \@plus 1\p@ \@minus 1\p@}
+
+\def\@listi{%
+  \leftmargin\leftmargini
+  \parsep 3\p@ \@plus \p@ \@minus \p@
+  \topsep 3\p@ \@plus \p@ \@minus \p@
+  \itemsep \z@
+}
+
+\let\@listI\@listi
+\@listi
+
+\def\@listii{%
+  \leftmargin\leftmarginii
+  \labelwidth\leftmarginii
+  \advance\labelwidth-\labelsep
+  \topsep\z@
+  \parsep\z@
+  \itemsep\z@
+}
+
+\def\@listiii{%
+  \leftmargin\leftmarginiii
+  \labelwidth\leftmarginiii
+  \advance\labelwidth-\labelsep
+  \topsep\z@
+  \parsep\z@
+  \partopsep\z@
+  \itemsep\z@
+}
+
+\def\@listiv{%
+  \leftmargin\leftmarginiv
+  \labelwidth\leftmarginiv
+  \advance\labelwidth-\labelsep
+}
+
+\def\@listv{%
+  \leftmargin\leftmarginv
+  \labelwidth\leftmarginv
+  \advance\labelwidth-\labelsep
+}
+
+\def\@listvi{%
+  \leftmargin\leftmarginvi
+  \labelwidth\leftmarginvi
+  \advance\labelwidth-\labelsep
+}
+
+% --------------------------------------------------------------------------
+% End of File
+% --------------------------------------------------------------------------
+
+\endinput

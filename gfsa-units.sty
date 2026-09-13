@@ -1,0 +1,84 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{gfsa-units}[2026/09/04 v0.1 Common English engineering units]
+
+\RequirePackage{siunitx}
+
+\sisetup{
+  per-mode = fraction
+}
+
+% -----------------------------------------------------------------------------
+% Length
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\inch}{in}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\yard}{yd}
+\DeclareSIUnit{\mile}{mi}
+
+% -----------------------------------------------------------------------------
+% Area and volume
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\acre}{acre}
+\DeclareSIUnit{\usgallon}{gal}
+
+% -----------------------------------------------------------------------------
+% Mass
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\ouncemass}{ozm}
+\DeclareSIUnit{\poundmass}{lbm}
+\DeclareSIUnit{\slug}{slug}
+\DeclareSIUnit{\shortton}{ton}
+
+% -----------------------------------------------------------------------------
+% Force
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\ounceforce}{ozf}
+\DeclareSIUnit{\poundforce}{lbf}
+\DeclareSIUnit{\kip}{kip}
+\DeclareSIUnit{\kips}{kips}
+
+% -----------------------------------------------------------------------------
+% Pressure and stress
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\psf}{psf}
+\DeclareSIUnit{\psi}{psi}
+\DeclareSIUnit{\ksi}{ksi}
+\DeclareSIUnit{\kpsi}{kpsi}
+
+% -----------------------------------------------------------------------------
+% Energy and power
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\BTU}{Btu}
+\DeclareSIUnit{\horsepower}{hp}
+
+% -----------------------------------------------------------------------------
+% Temperature
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\degreeFahrenheit}{\SIUnitSymbolDegree F}
+\DeclareSIUnit{\degreeRankine}{\SIUnitSymbolDegree R}
+\let\degF\degreeFahrenheit
+\let\degR\degreeRankine
+
+% -----------------------------------------------------------------------------
+% Rotational motion
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\revolution}{rev}
+\DeclareSIUnit{\rpm}{rpm}
+
+% -----------------------------------------------------------------------------
+% Common compound-unit abbreviations
+% -----------------------------------------------------------------------------
+
+\DeclareSIUnit{\mph}{mph}
+\DeclareSIUnit{\cfm}{cfm}
+\DeclareSIUnit{\gpm}{gpm}
+
+\endinput
