@@ -1,4 +1,4 @@
-# fonts
+# font-size
 
 Class option files that set the document’s type size for `gfsa.cls`.
 
