@@ -25,7 +25,7 @@ Each problem lives in its own `.tex` file. `main.tex` is the document that loads
 
 1. `main.tex` starts the document and loads `gfsa.cls`.
 2. Class options `10pt`, `11pt`, or `12pt` set the body size. The matching file in `fonts/` then defines `\tiny` through `\Huge` from that size.
-3. `gfsa-units.sty` is loaded from `main.tex`. It brings in `siunitx`, sets `per-mode=fraction`, and provides English engineering unit macros.
+3. `gfsa-units.sty` is loaded from `gfsa.cls`. It brings in `siunitx`, sets `per-mode=fraction`, and provides English engineering unit macros.
 4. Each problem file in `problems/` uses the `problem`, `given`, `find`, `solution`, and `answer` environments from `gfsa.cls`.
 5. `main.tex` pulls a problem in with `\input{problems/<name>.tex}`.
 6. Figures used in a problem or in `main.tex` go in `images/`.
