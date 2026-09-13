@@ -80,7 +80,7 @@ Use the macros from this package in **Given**, **Solution**, and **Answer** so v
 | `main.tex` | Compile this file |
 | `problems/` | One GFSA problem per `.tex` file |
 | `images/` | Figures |
-| `fonts/` | `10pt` / `11pt` / `12pt` size-option files |
+| `font-size/` | `10pt` / `11pt` / `12pt` size-option files |
 | `LICENSE` | MIT License text |
 
 ## Compiling
